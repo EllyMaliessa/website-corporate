@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery P. Ramlee</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="menu-toggle">☰ Menu</button>
+
+  <nav id="sidebar">
+    <h1>Gallery<br>P. Ramlee</h1>
+
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+
+    <a href="#" class="has-submenu" id="exhibitions-link">Exhibitions ▾</a>
+    <ul class="submenu" id="exhibitions-submenu">
+      <li><a href="exhibitions.html#current">Current</a></li>
+      <li><a href="exhibitions.html#upcoming">Upcoming</a></li>
+      <li><a href="exhibitions.html#past">Past&nbsp;Highlights</a></li>
+    </ul>
+
+    <a href="visit.html">Visit</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section class="hero welcome-banner hero-bg">
+      <div class="hero-content">
+        <img src="pramlee.jpg" alt="P. Ramlee Portrait" class="hero-image" />
+        <div class="hero-text">
+          <h2>Honoring Malaysia’s Cultural Legend</h2>
+          <p>
+            Welcome to the P. Ramlee Gallery — a tribute to Malaysia's most iconic artist and entertainer.
+          </p>
+          <div class="hero-buttons">
+            <a href="exhibitions.html" class="btn-fancy">Exhibitions</a>
+            <a href="visit.html" class="btn-fancy">Visit</a>
+            <a href="gallery.html" class="btn-fancy">Gallery</a>
+            <a href="about.html" class="btn-fancy">About</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-summary">
+      <h3>Who is P. Ramlee?</h3>
+      <p>
+        Tan Sri P. Ramlee was Malaysia’s legendary actor, director, singer, and songwriter who left a deep impact on
+        the nation's arts and culture. This gallery is built to preserve and celebrate his artistic legacy for future generations.
+      </p>
+    </section>
+
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const sidebar   = document.getElementById('sidebar');
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    const exLink = document.getElementById('exhibitions-link');
+    const exSub  = document.getElementById('exhibitions-submenu');
+    exLink.addEventListener('click', (e) => {
+      e.preventDefault();          
+      exSub.classList.toggle('open');
+      exLink.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact • P. Ramlee Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dyZtM4Sa5H1EbsOj+AfYQg6nTzsHbF9Gncj0CE8rFkGehZMjzRDTiCZM6z/eqRgZ96X3LMXGVc4EauvjN7E2/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <button id="menu-toggle">☰ Menu</button>
+  <nav id="sidebar">
+    <h1>Gallery<br>P. Ramlee</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a href="visit.html">Visit</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <main>
+
+    <section class="welcome-banner">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Reach out through the form or use the contact details below.</p>
+    </section>
+
+  
+    <section class="contact-section">
+
+    
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Reach Us At</h3>
+        <p><strong>Address:</strong> P. Ramlee Memorial Gallery, Jalan P. Ramlee, 10460 George Town, Pulau Pinang, Malaysia</p>
+        <p><strong>Phone:</strong> +60 4-228 2020</p>
+        <p><strong>Email:</strong> <a href="mailto:info@pramleegallery.my">info@pramleegallery.my</a></p>
+
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/galeripramlee" target="_blank" rel="noopener"><span class="sr-only">Facebook page</span>Facebook</a></li>
+          <li><a href="https://www.instagram.com/galeripramlee" target="_blank" rel="noopener"><span class="sr-only">Instagram profile</span>Instagram</a></li>
+          <li><a href="https://www.youtube.com/@galeripramlee" target="_blank" rel="noopener"><span class="sr-only">YouTube channel</span>YouTube</a></li>
+        </ul>
+      </div>
+
+    </section>
+    <section class="testimonials">
+      <h3>What Visitors Say</h3>
+      <div class="testimonial-card">
+        <p>"A truly nostalgic and informative experience. P. Ramlee's legacy lives on here!"</p>
+        <span>&ndash; Afiqah M., KL</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Beautifully curated exhibits and friendly staff. Highly recommended."</p>
+        <span>&ndash; John T., Penang</span>
+      </div>
+    </section>
+
+  </main>
+  <script>
+    const btn = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    btn.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

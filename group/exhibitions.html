@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exhibitions • P. Ramlee Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <button id="menu-toggle">☰</button>
+
+  <nav>
+    <h1>P. Ramlee Gallery</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="exhibitions.html" class="active">Exhibitions</a>
+    <a href="visit.html">Visit</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section class="welcome-banner hero-text">
+      <h2>Current & Upcoming Exhibitions</h2>
+      <p>Discover permanent collections and rotating themed showcases that celebrate the life and legacy of Tan Sri&nbsp;P. Ramlee.</p>
+    </section>
+
+    <section class="exhibition-grid">
+      <div class="exhibition-card">
+        <div class="exhibition-card-inner" style="animation-delay: 0s;">
+          <div class="exhibition-card-front">
+            <img src="outfit.jpg" alt="Original Costumes" loading="lazy">
+          </div>
+          <div class="exhibition-card-back">
+            <h3>Original Costumes</h3>
+            <p>Stage and film outfits worn by P. Ramlee, showing his evolving style throughout the decades.</p>
+            <p><strong>Location:</strong> Main Hall — Costume Gallery</p>
+          </div>
+        </div>
+      </div>
+      <div class="exhibition-card">
+        <div class="exhibition-card-inner" style="animation-delay: 1s;">
+          <div class="exhibition-card-front">
+            <img src="script.jpg" alt="Film Scripts" loading="lazy">
+          </div>
+          <div class="exhibition-card-back">
+            <h3>Film Script Archive</h3>
+            <p>Hand‑annotated scripts and scene notes from classics such as “Ibu Mertuaku” and “Pendekar Bujang Lapok.”</p>
+            <p><strong>Location:</strong> Documentation Corner</p>
+          </div>
+        </div>
+      </div>
+      <div class="exhibition-card">
+        <div class="exhibition-card-inner" style="animation-delay: 2s;">
+          <div class="exhibition-card-front">
+            <img src="trophy.jpg" alt="Award Trophies" loading="lazy">
+          </div>
+          <div class="exhibition-card-back">
+            <h3>Award Trophies</h3>
+            <p>Regional and international accolades honouring P. Ramlee’s outstanding contributions to film and music.</p>
+            <p><strong>Location:</strong> Legacy Gallery</p>
+          </div>
+        </div>
+      </div>
+      <div class="exhibition-card">
+        <div class="exhibition-card-inner" style="animation-delay: 3s;">
+          <div class="exhibition-card-front">
+            <img src="music.jpg" alt="Musical Instruments" loading="lazy">
+          </div>
+          <div class="exhibition-card-back">
+            <h3>Musical Instruments</h3>
+            <p>The very instruments used in studio recordings and live performances, complete with audio snippets.</p>
+            <p><strong>Location:</strong> Music Room</p>
+          </div>
+        </div>
+      </div>
+      <div class="exhibition-card">
+        <div class="exhibition-card-inner" style="animation-delay: 4s;">
+          <div class="exhibition-card-front">
+            <img src="musical.webp" alt="Comedy Theme" loading="lazy">
+          </div>
+          <div class="exhibition-card-back">
+            <h3>Special (July): Comedy Legend</h3>
+            <p><em>“P. Ramlee &amp; the World of Comedy”</em> — explore his iconic comedic roles, props and behind‑the‑scenes stories.</p>
+            <p><strong>Dates:</strong> 5–31 July 2025<br><strong>Location:</strong> Themed Gallery</p>
+          </div>
+        </div>
+      </div>
+      <div class="exhibition-card">
+        <div class="exhibition-card-inner" style="animation-delay: 5s;">
+          <div class="exhibition-card-front">
+            <img src="musical2.jpg" alt="Concert Archive" loading="lazy">
+          </div>
+          <div class="exhibition-card-back">
+            <h3>Special (Aug–Sep): Concert Archive</h3>
+            <p>Rare concert posters, live audio recordings and memorabilia from legendary stage performances.</p>
+            <p><strong>Dates:</strong> 5 Aug – 25 Sep 2025<br><strong>Location:</strong> Mini Theatre</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-btns">
+      <a href="visit.html" class="btn">Plan Your Visit</a>
+      <a href="gallery.html" class="btn">Photo Gallery</a>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About • Gallery P. Ramlee</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<button id="menu-toggle">☰</button>
+
+<nav id="sidebar">
+  <h1>Gallery<br>P. Ramlee</h1>
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active">About</a>
+  <a href="exhibitions.html">Exhibitions</a>
+  <a href="visit.html">Visit</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+  <section class="hero welcome-banner">
+    <div class="hero-text">
+      <h2>About the Gallery</h2>
+      <p>Get to know the space dedicated to honouring Malaysia's legendary entertainer.</p>
+    </div>
+  </section>
+
+<section class="about-wrapper">
+  <img src="gallery.jpg" alt="Interior view of Gallery P. Ramlee" class="about-img" />
+  <div class="about-text">
+    <div class="about-box">
+      <p>Gallery P. Ramlee is a cultural heritage venue located in Kuala Lumpur. Established to celebrate and preserve the legacy of Tan Sri P. Ramlee — one of Malaysia’s most iconic and influential figures in music and film — the gallery brings his remarkable story to life through immersive displays.</p>
+      <p>From vintage movie posters to handwritten lyrics and personal awards, every artifact on display offers visitors a glimpse into Malaysia’s entertainment golden age.</p>
+      <h3>Objectives</h3>
+      <ul>
+        <li>Preserve & display P. Ramlee’s personal collections</li>
+        <li>Educate younger generations on local performing-arts history</li>
+        <li>Serve as a resource hub for research & inspiration</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="about-section-container">
+  <div class="about-box">
+    <h3 class="section-heading">Milestones</h3>
+    <div class="timeline-item"><span class="year">1991</span> Gallery officially opened to the public.</div>
+    <div class="timeline-item"><span class="year">2005</span> Interactive audio stations introduced.</div>
+    <div class="timeline-item"><span class="year">2017</span> Mini cinema & archive corner added.</div>
+    <div class="timeline-item"><span class="year">2024</span> Virtual-tour experience launched.</div>
+  </div>
+</section>
+
+  
+<div class="fun-facts-box">
+  <h3>Fun Facts</h3>
+  <ul>
+    <li>500+ authentic artifacts are housed here.</li>
+    <li>The gallery hosts free weekend film screenings.</li>
+    <li>Entry is completely <strong>free</strong> for all visitors.</li>
+  </ul>
+</div>
+
+<blockquote class="quote">
+  “A visit to Gallery P. Ramlee feels like walking through a living legacy.”<br>— Visitor
+</blockquote>
+
+  <div class="about-btns">
+    <a href="gallery.html" class="btn">View Photo Gallery</a>
+    <a href="visit.html" class="btn">Plan Your Visit</a>
+  </div>
+
+</main>
+
+<script>
+  const btn = document.getElementById('menu-toggle');
+  const nav = document.getElementById('sidebar');
+  btn.addEventListener('click', () => nav.classList.toggle('active'));
+</script>
+
+</body>
+</html>
